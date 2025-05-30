@@ -1,1 +1,0 @@
-# cpdc-mock-test
