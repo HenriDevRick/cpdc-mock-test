@@ -57,15 +57,16 @@ function startTimer() {
 }
 
 function updateTimerDisplay() {
-    const minutes = Math.floor(remainingTime / 60).toString().padStart(2, '0');
+    const hours = Math.floor(remainingTime / 3600).toString().padStart(2, '0');
+    const minutes = Math.floor((remainingTime % 3600) / 60).toString().padStart(2, '0');
     const seconds = (remainingTime % 60).toString().padStart(2, '0');
-    timerEl.textContent = `Time Remaining: ${minutes}:${seconds}`;
+    timerEl.textContent = `Time Remaining: ${hours}:${minutes}:${seconds}`;
     
     // Mudar cor conforme o tempo diminui
     timerEl.className = '';
-    if (remainingTime <= 300) { // 5 minutos
+    if (remainingTime <= 300) {
         timerEl.classList.add('timer-critical');
-    } else if (remainingTime <= 600) { // 10 minutos
+    } else if (remainingTime <= 600) {
         timerEl.classList.add('timer-warning');
     }
 }
