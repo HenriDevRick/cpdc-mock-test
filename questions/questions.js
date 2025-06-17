@@ -659,7 +659,7 @@ const questions = [
             "d) Add a new treatment.",
             "e) Edit an engagement policy."
         ],
-        "answer": "d"
+        "answer": ["d","e"]
     },
     {
         "question": "U+ Bank, a retail bank, uses Pega Customer Decision Hub™ to cross-sell on the web by showing various credit card offers to its customers. The bank uses 1:1 Operations Manager and Pega Customer Decision Hub to fulfill the business-as-usual (BAU) requirements. The bank shows credit card offers based on existing engagement policies. Now, the bank wants to update the limit of the engagement policy from a credit score that is greater than 200 to a credit score that is greater than 250. Who initiates the change management process to fulfill this requirement?",
@@ -680,16 +680,6 @@ const questions = [
             "d) NBA Specialist"
         ],
         "answer": "b"
-    },
-    {
-        "question": "Sequence the following tasks while keeping in mind the order in which they are executed in Pega 1:1 Operations Manager",
-        "options": [
-            "a) E → B → C → A → D",
-            "b) A → B → C → E → D",
-            "c) E → D → A → B → C",
-            "d) E → A → C → B → D"
-        ],
-        "answer": "a"
     },
     {
         "question": "U+, a retail bank, has recently implemented a project in which credit card offers are presented to qualified customers when they log in to the web self-service portal. The bank now wants to divide an existing credit card offer range (250-600) into two ranges: 250-400 and 400-600. What is the recommended approach to implement this change?",
@@ -890,7 +880,7 @@ const questions = [
             "c) Context weighting",
             "d) Contact policies"
         ],
-        "answer": "a"
+        "answer": ["a","c"]
     },
     {
         "question": "A customer contacts a bank to resolve a credit card dispute. After dispute resolution, Next-Best-Action displays a set of sales offers that a Customer Service Representative can present to the customer. Which feature of Next-Best-Action helps the Customer Service Representative decide on the offer to present to the customer?",
@@ -920,7 +910,7 @@ const questions = [
             "c) 1% cash back credit card",
             "d) Credit card number"
         ],
-        "answer": "b"
+        "answer": ["b","c","d"]
     },
     {
         "question": "Aggregation components provide the ability to________________.",
@@ -1033,7 +1023,7 @@ const questions = [
             "d) Create the action and its web treatment",
             "e) Define customer contact policies"
         ],
-        "answer": ["a","d"]
+        "answer": ["a","c","d"]
     },
     {
         "question": "A financial institution has created a new policy that states the company will not send more than 500 emails per day. Which option allows you to implement the requirement?",
